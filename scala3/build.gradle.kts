@@ -12,7 +12,7 @@ dependencies {
 
     testImplementation("junit:junit:4.13.2")
     testImplementation("org.mockito:mockito-inline:4.11.0")
-    testImplementation("org.scalatest:scalatest_3:3.2.14")
+    testImplementation("org.scalatest:scalatest_3:3.2.15")
     testImplementation("org.scalatestplus:junit-4-13_3:3.2.14.0")
     testImplementation("com.codeborne:selenide:6.11.0")
 
