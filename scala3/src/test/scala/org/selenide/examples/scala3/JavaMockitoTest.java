@@ -6,7 +6,11 @@ import org.mockito.Mockito;
 import java.util.ArrayList;
 import java.util.List;
 
+import static java.time.LocalDate.parse;
 import static org.mockito.Mockito.doReturn;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.spy;
 
 public class JavaMockitoTest {
   @Test
@@ -58,5 +62,19 @@ public class JavaMockitoTest {
     
     doReturn(42).when(names).size();
     assert names.size() == 42;
+  }
+
+  @Test
+  public void mockFinalClass() {
+    RetiredPerson person = mock(RetiredPerson.class);
+    when(person.age()).thenReturn(91);
+    assert person.age() == 91;
+  }
+
+  @Test
+  public void spyFinalClass() {
+    RetiredPerson person = spy(new RetiredPerson(parse("1981-08-06"), parse("2041-07-07")));
+    when(person.today()).thenReturn(parse("1982-08-06"));
+    assert person.age() == 1;
   }
 }
