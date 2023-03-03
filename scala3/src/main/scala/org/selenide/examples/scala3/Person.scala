@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit
 
 class Person(private val birthDate: LocalDate) {
   def this() = {
-    this(LocalDate.EPOCH)
+    this(LocalDate.of(1970, 1, 1))
   }
 
   def age(): Int = ChronoUnit.YEARS.between(birthDate, today()).toInt
