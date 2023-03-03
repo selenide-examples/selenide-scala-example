@@ -30,6 +30,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: test-report-java-${{matrix.java-version}}
+          retention-days: 7
           path: |
             **/build/reports
             **/build/test-results
