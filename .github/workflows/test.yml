@@ -26,6 +26,7 @@ jobs:
         with:
           arguments: clean test --info
       - name: Upload artifacts
+        if: ${{ !cancelled() }}
         uses: actions/upload-artifact@v3
         with:
           name: test-report-java-${{matrix.java-version}}
