@@ -31,7 +31,7 @@ class ScalaMockitoTest {
     assert(person.age() > 40)
 
     doReturn(LocalDate.parse("1982-06-08")).when(person).today()
-    assert(person.age() == 1)
+    assert(person.age() == 12222)
   }
 
   @Test def spyWithClass(): Unit = {
