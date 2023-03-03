@@ -14,7 +14,7 @@ class ScalaMockitoTest {
     assert(person.age() == 0)
 
     doReturn(42).when(person).age()
-    assert(person.age() == 42)
+    assert(person.age() == 424242)
   }
 
   @Test @Ignore 
