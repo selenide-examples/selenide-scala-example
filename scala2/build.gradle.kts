@@ -8,7 +8,7 @@ repositories {
 }
 
 dependencies {
-    implementation("org.scala-lang:scala-library:2.13.12")
+    implementation("org.scala-lang:scala-library:2.13.13")
 
     testImplementation("junit:junit:4.13.2")
     testImplementation("org.mockito:mockito-core:5.10.0")
