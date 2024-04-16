@@ -16,7 +16,7 @@ dependencies {
     testImplementation("org.scalatestplus:junit-4-13_3:3.2.18.0")
     testImplementation("com.codeborne:selenide:7.2.3")
 
-    testRuntimeOnly("org.scala-lang.modules:scala-xml_3:2.2.0")
+    testRuntimeOnly("org.scala-lang.modules:scala-xml_3:2.3.0")
 }
 
 tasks {
