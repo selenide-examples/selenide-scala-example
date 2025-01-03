@@ -7,6 +7,10 @@ repositories {
     mavenCentral()
 }
 
+java {
+    toolchain.languageVersion.set(JavaLanguageVersion.of(17))
+}
+
 dependencies {
     implementation("org.scala-lang:scala3-library_3:3.6.2")
 
