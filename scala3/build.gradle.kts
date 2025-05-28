@@ -20,7 +20,7 @@ dependencies {
     testImplementation("org.scalatestplus:junit-4-13_3:3.2.19.1")
     testImplementation("com.codeborne:selenide:7.9.2")
 
-    testRuntimeOnly("org.scala-lang.modules:scala-xml_3:2.3.0")
+    testRuntimeOnly("org.scala-lang.modules:scala-xml_3:2.4.0")
 }
 
 tasks {
