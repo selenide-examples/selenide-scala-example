@@ -12,7 +12,7 @@ java {
 }
 
 dependencies {
-    implementation("org.scala-lang:scala-library:2.13.16")
+    implementation("org.scala-lang:scala-library:2.13.17")
 
     testImplementation("junit:junit:4.13.2")
     testImplementation("org.mockito:mockito-core:5.20.0")
