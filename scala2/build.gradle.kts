@@ -21,6 +21,7 @@ dependencies {
     testImplementation("com.codeborne:selenide:7.10.1")
 
     testRuntimeOnly("org.scala-lang.modules:scala-xml_2.13:2.4.0")
+    testRuntimeOnly("org.slf4j:slf4j-simple:2.0.17")
 }
 
 tasks {
