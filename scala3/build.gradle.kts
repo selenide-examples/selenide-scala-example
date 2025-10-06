@@ -18,7 +18,7 @@ dependencies {
     testImplementation("org.mockito:mockito-inline:4.11.0")
     testImplementation("org.scalatest:scalatest_3:3.2.15")
     testImplementation("org.scalatestplus:junit-4-13_3:3.2.19.1")
-    testImplementation("com.codeborne:selenide:7.10.1")
+    testImplementation("com.codeborne:selenide:7.11.1")
 
     testRuntimeOnly("org.scala-lang.modules:scala-xml_3:2.4.0")
     testRuntimeOnly("org.slf4j:slf4j-simple:2.0.17")
