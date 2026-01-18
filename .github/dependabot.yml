@@ -1,12 +1,25 @@
 version: 2
 updates:
-- package-ecosystem: gradle
-  directory: "/"
+- package-ecosystem: "gradle"
+  directory: "/scala2"
   schedule:
     interval: daily
-  open-pull-requests-limit: 10
+  ignore:
+    - dependency-name: "org.scala-lang:scala-library"
+      versions: [ "3.x" ]
+    - dependency-name: "org.scala-lang:scala3-library_3"
+
+- package-ecosystem: "gradle"
+  directory: "/scala3"
+  schedule:
+    interval: daily
+  ignore:
+    - dependency-name: "org.scala-lang:scala-library"
+      versions: [ "2.x" ]
+    - dependency-name: "org.scala-lang:scala3-library_3"
+      versions: [ "2.x" ]
+
 - package-ecosystem: "github-actions"
   directory: "/"
   schedule: 
     interval: daily
-  open-pull-requests-limit: 10
