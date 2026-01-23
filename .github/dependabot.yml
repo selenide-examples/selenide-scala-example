@@ -5,18 +5,18 @@ updates:
   schedule:
     interval: daily
   ignore:
-    - dependency-name: "org.scala-lang:scala-library"
+    - dependency-name: "scala-library"
       versions: [ "3.x" ]
-    - dependency-name: "org.scala-lang:scala3-library_3"
+    - dependency-name: "scala3-library_3"
 
 - package-ecosystem: "gradle"
   directory: "/scala3"
   schedule:
     interval: daily
   ignore:
-    - dependency-name: "org.scala-lang:scala-library"
+    - dependency-name: "scala-library"
       versions: [ "2.x" ]
-    - dependency-name: "org.scala-lang:scala3-library_3"
+    - dependency-name: "scala3-library_3"
       versions: [ "2.x" ]
 
 - package-ecosystem: "github-actions"
