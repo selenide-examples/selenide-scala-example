@@ -16,8 +16,8 @@ dependencies {
 
     testImplementation("junit:junit:4.13.2")
     testImplementation("org.mockito:mockito-core:5.23.0")
-    testImplementation("org.scalatest:scalatest_3:3.2.19")
-    testImplementation("org.scalatestplus:junit-4-13_3:3.2.19.1")
+    testImplementation("org.scalatest:scalatest_3:3.2.20")
+    testImplementation("org.scalatestplus:junit-4-13_3:3.2.20.1")
     testImplementation("com.codeborne:selenide:7.15.0")
 
     testRuntimeOnly("org.scala-lang.modules:scala-xml_3:2.4.0")
